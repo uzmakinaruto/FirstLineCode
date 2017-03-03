@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">第一行代码</string>
+    <string name="launcher_mode">
+        1.standard: 不管栈内有没有此Activity,都创建一个新的Activity;\n
+        2.singleTop:如果栈内最上面一个Activity是此Activity，就不创建新的Activity;\n
+        3.singleTask:只要栈内存在一个此Activity，就把此Activiy上面的Activity全部出栈;\n
+        4.singleInstance:开一个新的Task给此Activity独占;
+    </string>
 </resources>

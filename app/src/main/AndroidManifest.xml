@@ -8,11 +8,22 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".activity.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.BaseActivity"></activity>
+        <activity android:name=".activity.AtyChapterActivity"
+            android:label="探究活动"></activity>
+        <activity
+            android:name=".activity.DialogActivity">
+            <intent-filter>
+                <action android:name="com.jan.flc.firstlinecode.INTENT_ACTION"></action>
+                <category android:name="com.jan.flc.firstlinecode.INTENT_CATEGORY"></category>
+                <category android:name="android.intent.category.DEFAULT"></category>
             </intent-filter>
         </activity>
     </application>

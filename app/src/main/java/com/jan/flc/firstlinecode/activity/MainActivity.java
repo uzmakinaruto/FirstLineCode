@@ -1,14 +1,15 @@
-package com.jan.flc.firstlinecode;
+package com.jan.flc.firstlinecode.activity;
 
-import android.support.v7.app.AppCompatActivity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Adapter;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
-public class MainActivity extends AppCompatActivity implements AdapterView.OnItemClickListener {
+import com.jan.flc.firstlinecode.R;
+
+public class MainActivity extends BaseActivity implements AdapterView.OnItemClickListener {
 
     public static final String[] CHAPTERS = new String[]{
             "第1章 开始启程——你的第一行代码",
@@ -31,18 +32,18 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.book_main);
         ListView lv = (ListView) findViewById(R.id.chaptersList);
-        ArrayAdapter adapter = new ArrayAdapter(this,android.R.layout.simple_list_item_1,CHAPTERS);
+        ArrayAdapter adapter = new ArrayAdapter(this, android.R.layout.simple_list_item_1, CHAPTERS);
         lv.setAdapter(adapter);
         lv.setOnItemClickListener(this);
     }
 
     @Override
     public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
-        switch (position)
-        {
-            case 0:
+        switch (position) {
+            case 1:
+                startActivity(new Intent(this, AtyChapterActivity.class));
                 break;
             default:
                 break;
