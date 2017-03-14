@@ -2,6 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.jan.flc.firstlinecode">
 
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -15,17 +16,39 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".activity.BaseActivity"></activity>
-        <activity android:name=".activity.AtyChapterActivity"
-            android:label="探究活动"></activity>
+        <activity android:name=".activity.BaseActivity" />
         <activity
-            android:name=".activity.DialogActivity">
+            android:name=".activity.AtyChapterActivity"
+            android:label="探究活动" />
+        <activity android:name=".activity.DialogActivity">
             <intent-filter>
-                <action android:name="com.jan.flc.firstlinecode.INTENT_ACTION"></action>
-                <category android:name="com.jan.flc.firstlinecode.INTENT_CATEGORY"></category>
-                <category android:name="android.intent.category.DEFAULT"></category>
+                <action android:name="com.jan.flc.firstlinecode.INTENT_ACTION" />
+
+                <category android:name="com.jan.flc.firstlinecode.INTENT_CATEGORY" />
+                <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".activity.UIActivity"
+            android:label="UI开发" />
+        <activity
+            android:name=".activity.BaseUIActivity"
+            android:label="常用控件" />
+        <activity
+            android:name=".activity.PercentLayoutActivity"
+            android:label="百分比布局" />
+        <activity
+            android:name=".activity.ListViewActivity"
+            android:label="ListView" />
+        <activity
+            android:name=".activity.RecyclerViewActivity"
+            android:label="RecyclerView" />
+        <activity
+            android:name=".activity.ChatActivity"
+            android:label="聊天界面" />
+        <activity android:name=".activity.FragmentTestActivity"></activity>
+
+        <activity android:name=".activity.FragmentContentActivity"></activity>
     </application>
 
 </manifest>
