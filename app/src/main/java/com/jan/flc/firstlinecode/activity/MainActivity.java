@@ -1,5 +1,6 @@
 package com.jan.flc.firstlinecode.activity;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -8,6 +9,8 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 import com.jan.flc.firstlinecode.R;
+
+import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper;
 
 public class MainActivity extends BaseActivity implements AdapterView.OnItemClickListener {
 
@@ -46,10 +49,13 @@ public class MainActivity extends BaseActivity implements AdapterView.OnItemClic
                 startActivity(new Intent(this, AtyChapterActivity.class));
                 break;
             case 2:
-                startActivity(new Intent(this,UIActivity.class));
+                startActivity(new Intent(this, UIActivity.class));
                 break;
             case 3:
-                startActivity(new Intent(this,FragmentTestActivity.class));
+                startActivity(new Intent(this, FragmentTestActivity.class));
+                break;
+            case 4:
+                startActivity(new Intent(this, ReceiverActivity.class));
                 break;
             default:
                 break;

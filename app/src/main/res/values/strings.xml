@@ -6,4 +6,5 @@
         3.singleTask:只要栈内存在一个此Activity，就把此Activiy上面的Activity全部出栈;\n
         4.singleInstance:开一个新的Task给此Activity独占;
     </string>
+    <string name="title_activity_receiver">ReceiverActivity</string>
 </resources>

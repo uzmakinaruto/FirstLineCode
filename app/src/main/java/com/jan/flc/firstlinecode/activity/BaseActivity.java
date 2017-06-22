@@ -1,7 +1,7 @@
 package com.jan.flc.firstlinecode.activity;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 
 import com.jan.flc.firstlinecode.utils.ActivityCollection;
 import com.jan.flc.firstlinecode.utils.LogUtils;
@@ -51,4 +51,8 @@ public class BaseActivity extends AppCompatActivity {
         LogUtils.v(getClass().getSimpleName(),"onDestroy");
         ActivityCollection.removeActivity(this);
     }
+
+    /*protected void attachBaseContext(Context newBase) {
+        super.attachBaseContext(CalligraphyContextWrapper.wrap(newBase));
+    }*/
 }

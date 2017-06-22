@@ -1,5 +1,6 @@
 package com.jan.flc.firstlinecode.activity;
 
+import android.content.Context;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 
@@ -8,7 +9,9 @@ import com.jan.flc.firstlinecode.fragment.F4ContentFragment;
 import com.jan.flc.firstlinecode.fragment.F4ListFragment;
 import com.jan.flc.firstlinecode.fragment.F4WeiboFragment;
 
-public class FragmentTestActivity extends AppCompatActivity {
+import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper;
+
+public class FragmentTestActivity extends BaseActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
