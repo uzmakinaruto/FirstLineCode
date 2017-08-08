@@ -36,6 +36,9 @@ public class DataStorageActivity extends BaseActivity {
                     case 1:
                         startActivity(new Intent(DataStorageActivity.this, SharedPreferencesActivity.class));
                         break;
+                    case 2:
+                        startActivity(new Intent(DataStorageActivity.this, SqliteActivity.class));
+                        break;
                     default:
                         break;
                 }

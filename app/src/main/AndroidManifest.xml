@@ -65,6 +65,9 @@
         <activity
             android:name=".activity.SharedPreferencesActivity"
             android:label="SharedPreferences"></activity>
+
+        <activity android:name=".activity.SqliteActivity"
+            android:label="SQLite"></activity>
     </application>
 
 </manifest>
