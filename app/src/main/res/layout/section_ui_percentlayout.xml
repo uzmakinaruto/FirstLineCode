@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <TextView android:id="@+id/tv1"
+        app:layout_widthPercent = "10%"
+        app:layout_heightPercent = "10%"
+        android:text="10%"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:background="#6699FF"/>
+
+    <TextView android:id="@+id/tv2"
+        android:layout_below="@id/tv1"
+        app:layout_widthPercent = "20%"
+        app:layout_heightPercent = "10%"
+        android:text="20%"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:background="#3366CC"/>
+
+    <TextView android:id="@+id/tv3"
+        android:layout_below="@id/tv2"
+        app:layout_widthPercent = "30%"
+        app:layout_heightPercent = "10%"
+        android:text="30%"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:background="#003399"/>
+
+    <TextView android:id="@+id/tv4"
+        android:layout_below="@id/tv3"
+        app:layout_widthPercent = "40%"
+        app:layout_heightPercent = "10%"
+        android:text="40%"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:background="#99CC33"/>
+
+    <TextView android:id="@+id/tv5"
+        android:layout_below="@id/tv4"
+        app:layout_widthPercent = "50%"
+        app:layout_heightPercent = "10%"
+        android:text="50%"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:background="#00CC00"/>
+
+    <TextView android:id="@+id/tv6"
+        android:layout_below="@id/tv5"
+        app:layout_widthPercent = "60%"
+        app:layout_heightPercent = "10%"
+        android:text="60%"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:background="#006600"/>
+
+    <TextView android:id="@+id/tv7"
+        android:layout_below="@id/tv6"
+        app:layout_widthPercent = "70%"
+        app:layout_heightPercent = "10%"
+        android:text="70%"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:background="#FFCC00"/>
+
+    <TextView android:id="@+id/tv8"
+        android:layout_below="@id/tv7"
+        app:layout_widthPercent = "80%"
+        app:layout_heightPercent = "10%"
+        android:text="80%"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:background="#FF9900"/>
+
+    <TextView android:id="@+id/tv9"
+        android:layout_below="@id/tv8"
+        app:layout_widthPercent = "90%"
+        app:layout_heightPercent = "10%"
+        android:text="90%"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:background="#FF6600"/>
+
+    <TextView android:id="@+id/tv10"
+        android:layout_below="@id/tv9"
+        app:layout_widthPercent = "100%"
+        app:layout_heightPercent = "10%"
+        android:text="100%"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:background="#CC0000"/>
+</android.support.percent.PercentRelativeLayout>
