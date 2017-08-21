@@ -1,14 +1,12 @@
 package com.jan.flc.firstlinecode;
 
-import android.app.Application;
-
-import uk.co.chrisjenx.calligraphy.CalligraphyConfig;
+import org.litepal.LitePalApplication;
 
 /**
  * Created by huangje on 2017/3/16.
  */
 
-public class MyApplication extends Application {
+public class MyApplication extends LitePalApplication {
 
 
     @Override

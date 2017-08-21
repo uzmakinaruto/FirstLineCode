@@ -39,6 +39,9 @@ public class DataStorageActivity extends BaseActivity {
                     case 2:
                         startActivity(new Intent(DataStorageActivity.this, SqliteActivity.class));
                         break;
+                    case 3:
+                        startActivity(new Intent(DataStorageActivity.this, LitePalActivity.class));
+                        break;
                     default:
                         break;
                 }

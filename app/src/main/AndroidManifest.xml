@@ -66,8 +66,13 @@
             android:name=".activity.SharedPreferencesActivity"
             android:label="SharedPreferences"></activity>
 
-        <activity android:name=".activity.SqliteActivity"
+        <activity
+            android:name=".activity.SqliteActivity"
             android:label="SQLite"></activity>
+
+        <activity
+            android:name=".activity.LitePalActivity"
+            android:label="LitePal"></activity>
     </application>
 
 </manifest>
